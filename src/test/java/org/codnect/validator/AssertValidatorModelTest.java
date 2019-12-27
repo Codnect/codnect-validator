@@ -4,12 +4,8 @@ import org.codnect.validator.base.TestContext;
 import org.codnect.validator.base.TestModel;
 import org.codnect.validator.base.TestModelWithAssertHelpers;
 import org.codnect.validator.base.TestModelWithBean;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
-import org.powermock.api.mockito.PowerMockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.expression.spel.support.StandardEvaluationContext;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
