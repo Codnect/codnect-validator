@@ -1,15 +1,12 @@
 package org.codnect.validator;
 
 import org.codnect.validator.annotation.Assert;
+import org.codnect.validator.base.TestContext;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
-import org.powermock.modules.junit4.PowerMockRunnerDelegate;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.lang.reflect.Field;
 
@@ -21,10 +18,8 @@ import static org.powermock.api.mockito.PowerMockito.*;
 /**
  * Created by Burak Köken on 27.12.2019.
  */
-@RunWith(PowerMockRunner.class)
-@PowerMockRunnerDelegate(SpringJUnit4ClassRunner.class)
 @PrepareForTest({AssertValidator.class})
-public class AssertValidatorTest {
+public class AssertValidatorTest extends TestContext {
 
     class TestAssertAnnotationModel {
         @Assert("#this == null")

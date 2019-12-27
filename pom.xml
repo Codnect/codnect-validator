@@ -15,6 +15,8 @@
         <mockito.version>3.1.0</mockito.version>
         <powermock.version>2.0.4</powermock.version>
         <spring.boot.test.version>2.2.1.RELEASE</spring.boot.test.version>
+        <hibernate.validator.version>6.1.0.Final</hibernate.validator.version>
+        <glassfish.javax.el>3.0.1-b08</glassfish.javax.el>
     </properties>
 
     <dependencies>
@@ -75,6 +77,18 @@
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito2</artifactId>
             <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate.validator.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>${glassfish.javax.el}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

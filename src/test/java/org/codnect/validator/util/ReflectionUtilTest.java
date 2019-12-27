@@ -1,5 +1,6 @@
 package org.codnect.validator.util;
 
+import org.codnect.validator.base.TestContext;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -11,7 +12,7 @@ import java.util.Set;
 /**
  * Created by Burak Köken on 27.12.2019.
  */
-public class ReflectionUtilTest {
+public class ReflectionUtilTest extends TestContext {
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();

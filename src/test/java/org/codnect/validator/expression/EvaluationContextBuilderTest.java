@@ -1,12 +1,11 @@
 package org.codnect.validator.expression;
 
 import org.codnect.validator.base.TestAssertHelpers;
+import org.codnect.validator.base.TestContext;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
 import org.springframework.expression.BeanResolver;
 import org.springframework.expression.TypeConverter;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
@@ -25,9 +24,8 @@ import static org.junit.Assert.*;
 /**
  * Created by Burak Köken on 27.12.2019.
  */
-@RunWith(PowerMockRunner.class)
 @PrepareForTest({EvaluationContextBuilder.class})
-public class EvaluationContextBuilderTest {
+public class EvaluationContextBuilderTest extends TestContext {
 
     @Mock
     private Object rootObject;
