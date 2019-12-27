@@ -33,7 +33,7 @@ public class AssertValidator extends ExpressionValidator<Assert,Object> {
 
     @Override
     public boolean isValid(Object value, ConstraintValidatorContext constraintValidatorContext) {
-        return false;
+        return true;
     }
 
 }
