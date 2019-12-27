@@ -5,4 +5,8 @@ package org.codnect.validator.base;
  */
 public class TestBean {
 
+    public boolean alwaysTrue() {
+        return true;
+    }
+
 }
