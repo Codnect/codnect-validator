@@ -1,5 +1,7 @@
 package org.codnect.validator.annotation;
 
+import org.codnect.validator.AssertValidator;
+
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.*;
@@ -17,7 +19,7 @@ import java.lang.annotation.*;
 })
 @Retention(RetentionPolicy.RUNTIME)
 @Repeatable(Assert.List.class)
-@Constraint(validatedBy = {})
+@Constraint(validatedBy = {AssertValidator.class})
 @Documented
 public @interface Assert {
 
