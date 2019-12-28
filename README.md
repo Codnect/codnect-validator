@@ -1,6 +1,5 @@
 # Codnect Validator
 Codnect Validator is open source library that provides Bean Validation constraint that allows to use **Spring Expression Language (SpEL)**.
-Especially, It’s  very useful for cross-field validations in your classes.
 
 Usage
 =====
